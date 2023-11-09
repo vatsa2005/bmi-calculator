@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+
+.body {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    width: 80%;
+    margin: 0 0 5% 0;
+    text-align: center;
+    background-image: linear-gradient(135deg, #e1e8f1, #d2eff1, #7af4fa);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.content {
+    width: 50%;
+}
+.content > p {
+    color: #737373;
+}
+
+.calc {
+    align-self: center;
+    position: absolute;
+    right: 2%;
+    height: 50%;
+    width: 40%;
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+    -webkit-box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+}
+.calc>.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 20%;
+}
+
+.calc>.units {
+    display: flex;
+    height: 20%;
+}
+.calc>.units>div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.calc>.units>div>input {
+    border: 1px solid #a6a6a6;
+}
+.calc>.inputs {
+    display: flex;
+    height: 40%;
+}
+.calc>.inputs>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #a6a6a6;
+}
+.calc>.inputs>div>input {
+    border: 1px solid #a6a6a6;
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+}   
+.calc>.inputs>div>input:focus {
+    outline: none;
+}
+.calc>.inputs>div>.unit {
+    position: relative;
+    bottom: 35%;
+    left: 15%;
+    font-size: 0.9em;
+    color: #5271ff;
+    font-weight: bold;
+    height: 5%;
+}
+.calc>.footer {
+    height: 30%;
+    border-radius: 10px 40px 40px 10px;
+    background-color: #5271ff;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+.calc>.footer>h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.calc>.footer>p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1225px) {
+    .calc>.footer>h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:801px)  {
+    .body {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .info {
+        height: 100%;
+        width: 100%;
+        margin: 0 0 0 0;
+        text-align: center;
+        background-image: linear-gradient(135deg, #e1e8f1, #d2eff1, #7af4fa);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: none;
+        
+    }
+    .calc {
+        height: 50%;
+        width: 100%;
+        margin: 0 0 0 0;
+        align-self: center;
+        position: relative;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        top: 0%;
+        background-color: #ffffff;
+        /* border-radius: 20px; */
+        display: flex;
+        flex-direction: column;
+        box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+        -webkit-box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+        -moz-box-shadow: 7px -2px 11px 0px rgba(0,0,0,0.19);
+        
+    }
+    .calc>.inputs>div>.unit {
+        position: relative;
+        bottom: 32%;
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .calc>.header {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .calc>.footer>p {
+        font-size: 0.8rem;
+    }
+}
+
